@@ -1,10 +1,11 @@
 module.exports = {
-	name: 'add_track',
+	name: 'add',
+	aliases: ['play'],
 	description: 'Ajoute une chanson à la liste de lecture',
 	args: true,
     usage: '<chanson>',
 
-	execute(message, args) {
-		message.channel.send(args[0] + " ajouté à la liste de lecture");
+	execute(message, _args) {
+		message.react("👌");
 	},
 };
